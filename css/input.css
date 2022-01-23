@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .header-dark {
+    @apply font-header font-black text-header-secondary;
+  }
+
+  .link-underline {
+    @apply h-[10px] w-[8.5625rem] rounded-[28px] opacity-25 absolute;
+  }
+
+  .testimonial-img {
+    @apply rounded-[100px] h-18 mx-auto mt-16 mb-8;
+  }
+}
+
+@layer utilities {
+  .clamp-left {
+    padding-left: clamp(1.5rem, 10.3125rem, 12vw);
+  }
+  .clamp-pos-left {
+    left: clamp(1.5rem, 10.3125rem, 12vw);
+  }
+
+  .clamp-right {
+    padding-right: clamp(1.5rem, 10.3125rem, 12vw);
+  }
+
+  .clamp-pos-right {
+    right: clamp(1.5rem, 10.3125rem, 12vw);
+  }
+}
